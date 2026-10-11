@@ -19,7 +19,6 @@ Kullanıcı kayıt/giriş sistemi olan, her kullanıcının kendi görevlerini y
 1. XAMPP'te Apache ve MySQL'i başlatın.
 2. Dosyaları `C:\xampp\htdocs\todo_app\` klasörüne kopyalayın.
 3. `http://localhost/phpmyadmin` → **SQL** sekmesinde `setup.sql` içeriğini çalıştırın.
-   > ⚠️ Eski `tasks` tablosu silinip yeni yapıyla yeniden oluşturulur.
 4. `http://localhost/todo_app/register.php` adresinden hesap oluşturun.
 
 ## 🤖 Yapay zeka asistanını etkinleştirme
