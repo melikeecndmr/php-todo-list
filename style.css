@@ -17,7 +17,7 @@ body {
 .card { 
     background: #ffffff; 
     width: 100%; 
-    max-width: 450px; 
+    max-width: 480px; 
     padding: 30px; 
     border-radius: 16px; 
     box-shadow: 0 10px 25px rgba(0,0,0,0.15); 
@@ -73,7 +73,7 @@ ul {
 
 li { 
     background: #f7fafc; 
-    padding: 14px 16px; 
+    padding: 12px 16px; 
     margin-bottom: 10px; 
     border-radius: 8px; 
     display: flex; 
@@ -88,27 +88,64 @@ li:hover {
     transform: translateY(-2px); 
 }
 
+/* Tamamlanmış Görev Stili */
+li.completed { 
+    background: #edf2f7; 
+    border-left-color: #a0aec0; 
+}
+
+li.completed .task-text { 
+    text-decoration: line-through; 
+    color: #a0aec0; 
+}
+
+.task-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    overflow: hidden;
+}
+
 .task-text { 
     color: #4a5568; 
     font-size: 14px; 
     word-break: break-all; 
-    margin-right: 10px; 
 }
 
-.delete-btn { 
-    background: #fed7d7; 
-    color: c53030; 
-    padding: 6px 12px; 
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+.btn { 
+    padding: 6px 10px; 
     text-decoration: none; 
     border-radius: 6px; 
     font-size: 12px; 
     font-weight: 500; 
     transition: background 0.2s; 
+    border: none;
+    cursor: pointer;
 }
 
-.delete-btn:hover { 
-    background: #feb2b2; 
+.done-btn { 
+    background: #c6f6d5; 
+    color: #22543d; 
 }
+.done-btn:hover { background: #9ae6b4; }
+
+.undone-btn { 
+    background: #e2e8f0; 
+    color: #4a5568; 
+}
+.undone-btn:hover { background: #cbd5e0; }
+
+.delete-btn { 
+    background: #fed7d7; 
+    color: #c53030; 
+}
+.delete-btn:hover { background: #feb2b2; }
 
 .empty-text { 
     text-align: center; 
